@@ -1,6 +1,5 @@
-title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+title: openEMS
+logo: logo.png
+description: openEMS is a free and open electromagnetic field solver using the FDTD method.
+show_downloads: false
 theme: jekyll-theme-minimal
