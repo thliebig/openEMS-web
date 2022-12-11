@@ -12,7 +12,7 @@ Matlab or Octave and Python are used as an easy and flexible scripting interface
 
 [Latest Windows Build](https://github.com/thliebig/openEMS-Project/releases)
 
-[Linux Build instructions](https://github.com/thliebig/openEMS-Project#install-instruction)
+[Linux Build instructions](https://docs.openems.de/install.html#linux)
 
 ## News and Anouncements
 
