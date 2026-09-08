@@ -10,12 +10,25 @@
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
+    <!-- Small sizes use the "EM" mark; 48px and up keep the full openEMS wordmark. -->
+    <link rel="icon" href="{{ "/favicon.svg" | relative_url }}" type="image/svg+xml">
+    <link rel="icon" href="{{ "/favicon-16.png" | relative_url }}" sizes="16x16" type="image/png">
+    <link rel="icon" href="{{ "/favicon-32.png" | relative_url }}" sizes="32x32" type="image/png">
+    <link rel="icon" href="{{ "/favicon-48.png" | relative_url }}" sizes="48x48" type="image/png">
+    <link rel="icon" href="{{ "/favicon.ico" | relative_url }}" sizes="16x16 32x32">
+    <link rel="apple-touch-icon" href="{{ "/apple-touch-icon.png" | relative_url }}">
+    <style>
+      /* Sidebar navigation. Scoped so it is not caught by the theme's
+         `header ul` rule, which absolutely positions ul.downloads below 960px. */
+      header ul.nav { list-style: none; padding: 0; margin: 0 0 20px; position: static; }
+      header ul.nav li { margin: 0 0 4px; }
+    </style>
     {% include head-custom.html %}
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <a href="{{ "/" | absolute_url }}"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>
+        <a href="{{ "/" | absolute_url }}"><img src="{{ "/logo.svg" | relative_url }}" alt="openEMS logo" width="135" height="101" /></a>
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
@@ -26,19 +39,21 @@
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
         {% endif %}
-        <li><a href="https://openems.readthedocs.io" target="_blank">Latest Documentation</a></li>
-        <li><a href="https://docs.openems.de" target="_blank">Stable Documentation</a></li>
-        <li><a href="https://wiki.openems.de" target="_blank">Legacy Wiki</a></li>
-        <li><a href="https://github.com/thliebig/openEMS-Project/discussions" target="_blank">GitHub Discussions</a></li>
-        {% assign sorted = site.html_pages | sort:"rank" %}
-        {% for item in sorted %}
-          {% if item.path != "index.md" and item.title and item.rank %}
-            <li>
-              <a href="{{ item.path | replace:'.md','.html' }}">{{ item.title }}</a>
-              <!-- <span> [ {{ item.path }} - {{ item.title }} - {{ item.rank }} ] </span> -->
-            </li>
-          {% endif %}
-        {% endfor %}
+        <ul class="nav">
+          <li><a href="https://openems.readthedocs.io" target="_blank">Latest Documentation</a></li>
+          <li><a href="https://docs.openems.de" target="_blank">Stable Documentation</a></li>
+          <li><a href="https://wiki.openems.de" target="_blank">Legacy Wiki</a></li>
+          <li><a href="https://github.com/thliebig/openEMS-Project/discussions" target="_blank">GitHub Discussions</a></li>
+          <li><a href="https://github.com/thliebig/openEMS-Project" target="_blank">openEMS on GitHub</a></li>
+          {% assign sorted = site.html_pages | sort:"rank" %}
+          {% for item in sorted %}
+            {% if item.path != "index.md" and item.title and item.rank %}
+              <li>
+                <a href="{{ item.path | replace:'.md','.html' | relative_url }}">{{ item.title }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
       </header>
       <section>
 

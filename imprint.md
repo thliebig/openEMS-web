@@ -18,4 +18,4 @@ Bismarckstr. 81<br />
 47057 Duisburg<br />
 
 Email: [thorsten.liebig@uni-due.de](mailto:thorsten.liebig@uni-due.de)<br />
-Web:  [https://www.ate.uni-duisburg.de/](https://www.ate.uni-duisburg.de)
+Web:  [https://www.uni-due.de/ate/](https://www.uni-due.de/ate/)

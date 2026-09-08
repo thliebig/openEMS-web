@@ -14,9 +14,15 @@ Matlab or Octave and Python are used as an easy and flexible scripting interface
 
 [Linux Build instructions](https://docs.openems.de/install.html#linux)
 
-## News and Anouncements
+## Documentation
 
-**01.01.2023**: Since the forum is still down, I have activated a github discussion to ask your question about the usage
-of openEMS or just give some feedback. [Github Discussions](https://github.com/thliebig/openEMS-Project/discussions)
+[Stable Documentation](https://docs.openems.de) for the current release, and the
+[Latest Documentation](https://openems.readthedocs.io/en/latest/) built from the development branch.
+Older material is still available in the [Legacy Wiki](https://wiki.openems.de).
 
-**07.12.2022**: New temporary openEMS.de website since the [University DUE](https://uni-due.org/en) hosting is currently offline!
+## Questions and Feedback
+
+Please use [GitHub Discussions](https://github.com/thliebig/openEMS-Project/discussions) to ask
+questions about the usage of openEMS or to give some feedback. This is also the best place to
+start if something looks like a bug: openEMS is developed across several repositories, and a
+discussion is the quickest way to work out which one is actually affected.
